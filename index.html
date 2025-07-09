@@ -38,7 +38,7 @@
   </head>
   <body>
     <!-- header -->
-    <header class="shadow sticky top-0 bg-gray-200 z-50">
+    <header class="shadow sticky top-0 bg-gray-50 z-50">
       <div
         class="container mx-auto px-4 flex items-center justify-between gap-8"
       >
@@ -80,10 +80,10 @@
           <input
             type="text"
             placeholder="search your products"
-            class="border border-secondary bg-gray-200 rounded-lg pl-4 py-2 pr-12 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
+            class="border hidden sm:block border-secondary bg-gray-50 rounded-lg pl-4 py-2 pr-12 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
           />
           <i
-            class="fa fa-search absolute right-3 top-1/2 -translate-y-1/2 text-slate-400"
+            class="fa fa-search absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hidden sm:block"
           ></i>
         </div>
         <div class="flex justify-between align-center gap-5">
@@ -91,20 +91,21 @@
             <i class="fa fa-shopping-cart text-secondary text-xl"></i>
           </div>
           <div>
-            <button
-              class="bg-gray-200 border border-secondary py-2 px-3 rounded-xl font-medium hover:shadow hover:shadow-black active:bg-secondary active:text-white active:opacity-80"
+            <a
+              href="#"
+              class="bg-gray-50 border border-secondary py-2 px-3 rounded-xl font-medium hover:shadow hover:shadow-black active:bg-secondary active:text-white active:opacity-80"
             >
               Register
-            </button>
+            </a>
           </div>
         </div>
       </div>
     </header>
 
     <!-- main -->
-    <main class="h-[200vh] bg-[#e5e5e5]">
+    <main class="h-[200vh] bg-gray-50">
       <!-- hero section -->
-      <section class="ralative w-full h-[90vh] overflow-hidden">
+      <section class="relative w-full h-[90vh] overflow-hidden">
         <video
           src="/video/video.mp4"
           autoplay
@@ -124,29 +125,353 @@
             <br />Delivered fast. Priced fair. Locally sourced.
           </p>
           <div class="flex lg:flex-row flex-col gap-5 mt-10">
-            <botton
+            <a
+              href="#"
               class="border rounded-xl bg-transparent text-xl text-white py-2 px-6 select-none font-medium border-gray text-black hover:shadow hover:text-black hover:shadow-black cursor-pointer hover:bg-gray-200 active:opacity-50 transition-colors"
-              >Shop Now</botton
+              >Shop Now</a
             >
-            <botton
+            <a
+              href="#"
               class="border rounded-xl bg-transparent text-xl text-white py-2 px-6 select-none font-medium border-gray text-black hover:shadow hover:text-black hover:shadow-black cursor-pointer hover:bg-gray-200 active:opacity-50 transition-colors"
-              >Browse all Categories</botton
+              >Browse all Categories</a
             >
           </div>
         </div>
       </section>
 
       <!-- featured categories -->
-      <section></section>
+      <section class="pt-16">
+        <div class="container mx-auto px-4">
+          <div class="mb-10">
+            <h2 class="text-3xl font-bold text-center">Featured Categories</h2>
+            <p class="text-lg mt-5 text-slate-500 text-center">
+              Discover fresh, quality products across all your favourite
+              categories.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            <div class="relative rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/image/fruits.jpg"
+                alt="fruits"
+                class="object-cover rounded-md w-full h-full opacity-80"
+              />
+              <div class="absolute bottom-2 left-3">
+                <h1 class="text-2xl font-extrabold text-white">Fresh Fruits</h1>
+              </div>
+            </div>
+            <div class="relative rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/image/cakes.jpg"
+                alt="fruits"
+                class="object-cover rounded-md w-full h-full opacity-80"
+              />
+              <div class="absolute bottom-2 left-3">
+                <h1 class="text-2xl font-extrabold text-white">Cakes</h1>
+              </div>
+            </div>
+            <div class="relative rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/image/veges.jpg"
+                alt="fruits"
+                class="object-cover rounded-md w-full h-full opacity-80"
+              />
+              <div class="absolute bottom-2 left-3">
+                <h1 class="text-2xl font-extrabold text-white">Fresh Veges</h1>
+              </div>
+            </div>
+            <div class="relative rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/image/rice.jpg"
+                alt="fruits"
+                class="object-cover rounded-md w-full h-full opacity-80"
+              />
+              <div class="absolute bottom-2 left-3">
+                <h1 class="text-2xl font-extrabold text-white">
+                  Rice & Grains
+                </h1>
+              </div>
+            </div>
+            <div class="relative rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/image/drinks.jpg"
+                alt="fruits"
+                class="object-cover rounded-md w- full h-full opacity-80"
+              />
+              <div class="absolute bottom-2 left-3">
+                <h1 class="text-2xl font-extrabold text-white">Soft Drinks</h1>
+              </div>
+            </div>
+            <div class="relative rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/image/eggs.jpg"
+                alt="fruits"
+                class="object-cover rounded-md w-full h-full opacity-80"
+              />
+              <div class="absolute bottom-2 left-3">
+                <h1 class="text-2xl font-extrabold text-white">Eggs</h1>
+              </div>
+            </div>
+            <div class="relative rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/image/pulses.jpg"
+                alt="fruits"
+                class="object-cover rounded-md w-full h-full opacity-80"
+              />
+              <div class="absolute bottom-2 left-3">
+                <h1 class="text-2xl font-extrabold text-white">
+                  Dals & Lentils
+                </h1>
+              </div>
+            </div>
+            <div class="relative rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/image/meats.jpg"
+                alt="fruits"
+                class="object-cover rounded-md w-full h-full opacity-80"
+              />
+              <div class="absolute bottom-2 left-3">
+                <h1 class="text-2xl font-extrabold text-white">Meats</h1>
+              </div>
+            </div>
+            <div class="relative rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/image/beers.jpg"
+                alt="fruits"
+                class="object-cover rounded-md w-full h-full opacity-80"
+              />
+              <div class="absolute bottom-2 left-3">
+                <h1 class="text-2xl font-extrabold text-white">Hard Drinks</h1>
+              </div>
+            </div>
+            <div class="relative rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/image/fish.jpg"
+                alt="fruits"
+                class="object-cover rounded-md w-full h-full opacity-80"
+              />
+              <div class="absolute bottom-2 left-3">
+                <h1 class="text-2xl font-extrabold text-white">Sea Foods</h1>
+              </div>
+            </div>
+            <div class="relative rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/image/groceries.jpg"
+                alt="fruits"
+                class="object-cover rounded-md w-full h-full opacity-80"
+              />
+              <div class="absolute bottom-2 left-3">
+                <h1 class="text-2xl font-extrabold text-white">
+                  Groceries Items
+                </h1>
+              </div>
+            </div>
+            <div class="relative rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="/image/milk.jpg"
+                alt="fruits"
+                class="object-cover rounded-md w-full h-full opacity-80"
+              />
+              <div class="absolute bottom-2 left-3">
+                <h1 class="text-2xl font-extrabold text-white">
+                  Dailry Products
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- trending products -->
-      <section></section>
+      <section class="pt-16">
+        <div class="container mx-auto px-4">
+          <div class="mb-10">
+            <h1 class="text-3xl font-bold text-center">Trending Products</h1>
+            <p class="text-lg text-slate-500 text-center mt-5">
+              Most popular items loved by our customers.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+            <div>
+              <div class="rounded-lg shadow-lg bg-gray-50">
+                <div class="relative">
+                  <img
+                    src="/image/apples.jpg"
+                    alt="apples"
+                    class="rounded-t-lg w-full h-full object-cover"
+                  />
+                  <span
+                    class="absolute text-white top-2 left-2 bg-secondary rounded-lg p-1 font-medium"
+                    >-20%</span
+                  >
+                </div>
+                <div class="p-3 pl-5">
+                  <h3 class="font-medium text-lg">Fresh Apples</h3>
+                  <div class="text-yellow-400 my-1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <span class="text-gray-400 ml-2">(4.5/5.0)</span>
+                  </div>
+                  <div class="mb-2">
+                    <span class="font-medium mr-5 text-secondary"
+                      >Rs 300/Kg</span
+                    >
+                    <span class="line-through text-sm text-gray-400"
+                      >Rs 350/Kg</span
+                    >
+                  </div>
+                  <div class="text-center mb-2">
+                    <a
+                      href="#"
+                      class="rounded-2xl font-bold text-lg text-white block w-full bg-secondary p-2 hover:shadow hover:shadow-black active:opacity-80"
+                      >Add to Cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="rounded-lg shadow-lg bg-gray-50">
+                <div class="relative">
+                  <img
+                    src="/image/basmati.jpg"
+                    alt="basmati"
+                    class="rounded-t-lg w-full h-full object-cover"
+                  />
+                  <span
+                    class="absolute text-white top-2 left-2 bg-secondary rounded-lg p-1 font-medium"
+                    >-10%</span
+                  >
+                </div>
+                <div class="p-3 pl-5">
+                  <h3 class="font-medium text-lg">Premium Basmati</h3>
+                  <div class="text-yellow-400 my-1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <span class="text-gray-400 ml-2">(4.0/5.0)</span>
+                  </div>
+                  <div class="mb-2">
+                    <span class="font-medium mr-5 text-secondary"
+                      >Rs 180/Kg</span
+                    >
+                    <span class="line-through text-sm text-gray-400"
+                      >Rs 200/Kg</span
+                    >
+                  </div>
+                  <div class="text-center mb-2">
+                    <a
+                      href="#"
+                      class="rounded-2xl font-bold text-lg text-white block w-full bg-secondary p-2 hover:shadow hover:shadow-black active:opacity-80"
+                      >Add to Cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="rounded-lg shadow-lg bg-gray-50">
+                <div class="relative">
+                  <img
+                    src="/image/mango.jpg"
+                    alt="mango"
+                    class="rounded-t-lg w-full h-full object-cover"
+                  />
+                  <span
+                    class="absolute text-white top-2 left-2 bg-secondary rounded-lg p-1 font-medium"
+                    >-30%</span
+                  >
+                </div>
+                <div class="p-3 pl-5">
+                  <h3 class="font-medium text-lg">Seasonal Mangoes</h3>
+                  <div class="text-yellow-400 my-1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <span class="text-gray-400 ml-2">(5.0/5.0)</span>
+                  </div>
+                  <div class="mb-2">
+                    <span class="font-medium mr-5 text-secondary"
+                      >Rs 90/Kg</span
+                    >
+                    <span class="line-through text-sm text-gray-400"
+                      >Rs 110/Kg</span
+                    >
+                  </div>
+                  <div class="text-center mb-2">
+                    <a
+                      href="#"
+                      class="rounded-2xl font-bold text-lg text-white block w-full bg-secondary p-2 hover:shadow hover:shadow-black active:opacity-80"
+                      >Add to Cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="rounded-lg shadow-lg bg-gray-50">
+                <div class="relative">
+                  <img
+                    src="/image/honey.jpg"
+                    alt="honey"
+                    class="rounded-t-lg w-full h-full object-cover"
+                  />
+                  <span
+                    class="absolute text-white top-2 left-2 bg-secondary rounded-lg p-1 font-medium"
+                    >-40%</span
+                  >
+                </div>
+                <div class="p-3 pl-5">
+                  <h3 class="font-medium text-lg">Himalayas Honey</h3>
+                  <div class="text-yellow-400 my-1">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <span class="text-gray-400 ml-2">(5.0/5.0)</span>
+                  </div>
+                  <div class="mb-2">
+                    <span class="font-medium mr-5 text-secondary"
+                      >Rs 800/Kg</span
+                    >
+                    <span class="line-through text-sm text-gray-400"
+                      >Rs 1120/Kg</span
+                    >
+                  </div>
+                  <div class="text-center mb-2">
+                    <a
+                      href="#"
+                      class="rounded-2xl font-bold text-lg text-white block w-full bg-secondary p-2 hover:shadow hover:shadow-black active:opacity-80"
+                      >Add to Cart</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- weekly deals -->
-      <section></section>
+      <section class="pt-16">
+        <div class="container mx-auto px-4">
+          Weekly deals
+        </div>
+      </section>
 
       <!-- why choose DharanBazar -->
-      <section></section>
+      <section class="mt-16">
+        <div class="container mx-auto px-4">
+          Why Choose DharanBazar
+        </div>
+      </section>
 
       <!-- what our customers says -->
       <section></section>
